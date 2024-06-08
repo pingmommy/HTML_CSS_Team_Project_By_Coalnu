@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::before,
@@ -10,7 +11,8 @@
 body{
 	font-size: 18px;
 	color: #000;
-	font-family: 'campton', 'Apple SD Gothic Neo', NanumBarunGothic, '나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif;
+	/* font-family: 'campton', 'Apple SD Gothic Neo', NanumBarunGothic, '나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif; */
+  font-family: 'Noto Sans', sans-serif;
 }
 
 ul,li,ol{
