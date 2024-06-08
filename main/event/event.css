@@ -1,5 +1,4 @@
 
-
 /* ==============================main-top=============================== */
 
 .main-top-container{
@@ -8,7 +7,6 @@
   height: 650px;
   background-color: black;
 }
-
 
 .main-top-title{
   display: block;
@@ -128,6 +126,7 @@
   position: relative;
   top : 300px;
   padding: 100px;
+  margin-bottom: 500px;
 }
 
 .main-bottom-title{
@@ -168,13 +167,15 @@
   background-size: cover;
   background-position: center;
 }
+.bottom-imgbox:hover{
+  filter: brightness(1.5);
+}
 .bottom-image1 {
   background-image: url('image/event-img13.jpg');
 }
 .bottom-image2 {
   background-image: url('image/event-img14.jpg');
 }
-
 .bottom-image3 {
   background-image: url('image/event-img15.jpg');
 }
