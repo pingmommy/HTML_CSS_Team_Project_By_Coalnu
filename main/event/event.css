@@ -1,14 +1,13 @@
-
 /* ==============================main-top=============================== */
 
-.main-top-container{
+.main-top-container {
   display: block;
   width: 100%;
   height: 650px;
   background-color: black;
 }
 
-.main-top-title{
+.main-top-title {
   display: block;
   text-align: center;
   position: relative;
@@ -16,17 +15,17 @@
   padding: 50px;
   margin-bottom: 70px;
 }
-.main-top-subtitle{
+.main-top-subtitle {
   color: white;
   font-weight: 700;
 }
-.main-top-maintitle{
+.main-top-maintitle {
   color: white;
   font-weight: 700;
   font-size: 50px;
 }
 
-.main-top-logoArea{
+.main-top-logoArea {
   width: 100%;
   height: auto;
   display: flex;
@@ -40,7 +39,7 @@
   left: 50%;
   transform: translate(-50%);
 } */
-.main-top-cardbox{
+.main-top-cardbox {
   width: 200px;
   height: 200px;
   border-radius: 5%;
@@ -50,107 +49,105 @@
   font-size: 30px;
   font-weight: 400;
 }
-.kakaoStyle{
-  background-color: #FFEB00;
+.kakaoStyle {
+  background-color: #ffeb00;
 }
-.tossStyle{
-  background-color: #3182F7;
-  color:white;
+.tossStyle {
+  background-color: #3182f7;
+  color: white;
 }
-.paycoStyle{
-  background-color: #FA2829;
+.paycoStyle {
+  background-color: #fa2829;
   color: white;
   font-weight: bold;
 }
-.kbStyle{
-  background-color: #FFC603;
+.kbStyle {
+  background-color: #ffc603;
   font-size: 25px;
   font-weight: 700;
 }
-.ssStyle{
-  background-color: #125EE5;
+.ssStyle {
+  background-color: #125ee5;
   color: white;
   font-size: 25px;
   font-weight: 700;
 }
-.naverStyle{
-  background-color: #00AF26;
+.naverStyle {
+  background-color: #00af26;
   color: white;
   font-size: 25px;
   font-weight: 800;
 }
-.font-strong{
+.font-strong {
   font-weight: bold;
 }
 /* ==============================main-mid=============================== */
-.main-mid-container{
+.main-mid-container {
   display: block;
   width: 100%;
   height: 900px;
   padding: 200px;
 }
 
-.main-mid-title{
+.main-mid-title {
   width: 100%;
   height: auto;
   font-weight: 900;
   font-size: 50px;
   text-align: center;
-  padding:3px;
+  padding: 3px;
 }
-.mid-subtitleStyle{
+.mid-subtitleStyle {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.01em;
   text-align: center;
-  color: #A8A8A8;
+  color: #a8a8a8;
   margin-bottom: 100px;
 }
 
-.main-mid-imgarea{
+.main-mid-imgarea {
   display: flex;
   justify-content: center;
-  height:300px;
+  height: 300px;
 }
-.mid-imgStyle{
-  width : 500px;
+.mid-imgStyle {
+  width: 500px;
 }
-
-
 
 /* ==============================main-bottom=============================== */
-.main-bottom{
+.main-bottom {
   display: block;
   width: 100%;
   height: auto;
   position: relative;
-  top : 300px;
+  top: 300px;
   padding: 100px;
   margin-bottom: 500px;
 }
 
-.main-bottom-title{
+.main-bottom-title {
   width: 100%;
   height: auto;
   font-weight: 900;
   font-size: 50px;
   text-align: center;
-  padding:3px;
+  padding: 3px;
 }
-.bottom-subtitleStyle{
+.bottom-subtitleStyle {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.01em;
   text-align: center;
-  color: #A8A8A8;
+  color: #a8a8a8;
   margin-bottom: 100px;
 }
-.main-bottom-container{
+.main-bottom-container {
   display: flex;
   justify-content: left;
   width: 1200px;
   height: auto;
-  margin:auto;
+  margin: auto;
 }
 
 /* .bottom-imgbox{
@@ -158,7 +155,7 @@
   height: 300px;
   background-image: url("https://img.29cm.co.kr/next-edition/2024/04/15/04400911031948a99729f39a1eb8890a_20240415122716.jpg?width=500");
 } */
-.bottom-imgbox{
+.bottom-imgbox {
   width: 300px;
   height: 300px;
   padding: 10px;
@@ -167,41 +164,41 @@
   background-size: cover;
   background-position: center;
 }
-.bottom-imgbox:hover{
+.bottom-imgbox:hover {
   filter: brightness(1.5);
 }
 .bottom-image1 {
-  background-image: url('image/event-img13.jpg');
+  background-image: url("image/event-img13.jpg");
 }
 .bottom-image2 {
-  background-image: url('image/event-img14.jpg');
+  background-image: url("image/event-img14.jpg");
 }
 .bottom-image3 {
-  background-image: url('image/event-img15.jpg');
+  background-image: url("image/event-img15.jpg");
 }
 .bottom-image4 {
-  background-image: url('image/event-img16.jpg');
+  background-image: url("image/event-img16.jpg");
 }
 .bottom-image5 {
-  background-image: url('image/event-img17.jpg');
+  background-image: url("image/event-img17.jpg");
 }
 .bottom-image6 {
-  background-image: url('image/event-img18.jpg');
+  background-image: url("image/event-img18.jpg");
 }
 .bottom-image7 {
-  background-image: url('image/event-img19.jpg');
+  background-image: url("image/event-img19.jpg");
 }
-.image-box-text{
+.image-box-text {
   text-align: left;
-  padding:1px;
+  padding: 1px;
   font-size: 17px;
   font-weight: 600;
   color: whitesmoke;
 }
-.image-box-subtext{
+.image-box-subtext {
   float: bottom;
   text-align: left;
-  padding:5px;
+  padding: 5px;
   font-size: 12px;
   font-weight: 400;
   color: whitesmoke;
