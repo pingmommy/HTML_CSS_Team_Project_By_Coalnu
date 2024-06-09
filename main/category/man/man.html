@@ -20,35 +20,75 @@
 
       $('.main-container button').each(function() {
         $(this).on('click', function() {
-          //alert("버튼 클릭");
           location.reload(true);
         });
       });
 
+      $('.main-section-secondBox-imageAndTextBox').click(function() {
+           location.href = '../../Detailed Page/detail.html'; 
+      });
+
+
       $('.main-section-thirdBox-paging .num:first').css('color', '#000');
+
+      $(".colorCircle").click(function(){
+          $(this).toggleClass("clicked");
+      });
+      $(".colorText").click(function(){
+          $(this).siblings(".colorCircle").toggleClass("clicked");
+      });
+
+      // 화면 크기가 768px 이하로 작아졌을 때
+      $(window).resize(function(){
+
+        var windowWidth = $(window).width();
+
+        // if (windowWidth <= 853) {
+        //   $(".main-section-secondBox-imageAndTextBox").slice(4).hide();
+        //   return;
+        // }
+
+        if (windowWidth <= 1024) {
+          $(".main-section-secondBox-imageAndTextBox").slice(6).hide();
+          return;
+        }
+
+        if (windowWidth <= 1280) {
+          $(".main-section-secondBox-imageAndTextBox").slice(9).hide();
+          return;
+        }        
+      });
 
     });
 
-    function unPriceCheckBox() {
-      var priceCheckBox = $("#priceCheckBox");
-      
-      // 현재 체크된 상태를 확인
-      var isChecked = priceCheckBox.is(":checked");
 
-      if (isChecked) {
-        priceCheckBox.attr("checked", false);
-      } else {
-        priceCheckBox.prop("checked", true);
-      }
+    function updatePriceCheckBox() {
+        var priceCheckBoxSet = $("#priceCheckBoxSet");
+
+        var inputBox = $(".main-aside-thirdCategory-priceBox-detailSet .input-container input");
+        var inputContainers = $(".main-aside-thirdCategory-priceBox-detailSet .input-container span");
+        var inputText = $(".main-aside-thirdCategory-priceBox-detailSet .input-container .priceText");
+
+        if (priceCheckBoxSet.prop("checked")) {
+          inputBox.prop("disabled", false);
+          inputText.css("color", "black");
+        } else {
+          inputBox.prop("disabled", true);
+        }
     }
+
+
   </script> 
 
 </head>
-<body>
+<>
+
+
+
 <!-- 내비 -->
 <section>
   <nav
-    class="navbar fixed-top navbar-expand-lg pt-5 pb-2"
+    class="navbar fixed-top navbar-expand-lg pt-5 pb-2 ps-4"
     style="background-color: white"
     i
   >
@@ -315,30 +355,11 @@
 </section>
 <!-- 내비 끝 -->
   
-              
-  
-    <div style="display: flex; align-items: center;">
-      <div style="">          
-        <img src="https://noona-spotify.netlify.app/image/logo.png" style="width: 100px;  padding: 0px 15px; padding-top: 5px;; " >
-      </div>
-
-      <div style="">
-        <a href="" style="font-weight: bold;  color:white;  padding: 0 15px;           text-decoration: none;    ">BEST</a>  
-        <a href="" style="font-weight: bold;  color:white;  padding: 0 15px;                          text-decoration: none;  ">WOMEN</a>
-        <a href="" style="font-weight: bold;  color:white;  padding: 0 15px;                         text-decoration: none;  ">MEN</a>
-        <a href="" style="font-weight: bold;  color:white;  padding: 0 15px;                         text-decoration: none;  ">BEST</a>
-        <a href="" style="font-weight: bold;  color:white;  padding: 0 15px;                         text-decoration: none;  ">KIDS</a>
-        <a href="" style="font-weight: bold;  color:white;  padding: 0 15px;                       text-decoration: none;  ">EVENT</a>  
-      </div>
-    </div>
-      
-    <div  style=" display: flex;  align-items: center;">
-      <a href="" style="font-weight: bold;  color:white;  padding: 0 15px;                          text-decoration: none;  ">LOG IN</a> 
-      <a href="" style="font-weight: bold;  color:white;  padding: 0 15px;                          text-decoration: none;  ">SIGN IN</a>
-    </div>
-  </nav> -->
 
 
+
+
+  <div class="mb-5"> </div> -->
 
 
   <div class="nav-detail mt-5"> 
@@ -346,12 +367,14 @@
 
     <div class="nav-detail-rightBox">
       <div class="nav-detail-rightBox-leftLine">
-        <span class="me-2 custom-text-gray custom-fs-16"> 홈 </span>   <!-- 기본 폰트??-->
+        <a href="#"><span class="me-2 custom-text-gray custom-fs-16">홈</span></a>   
         <span class="me-2 custom-text-lightGray custom-fs-16"> > </span>
-        <span class="me-2 custom-text-gray custom-fs-16"> 남성 </span>
+        <a href="#"><span class="me-2 custom-text-gray custom-fs-16">남성</span></a>
         <span class="me-2 custom-text-lightGray custom-fs-16"> > </span>
-        <span class="me-2 custom-text-gray custom-fs-16"> 의류 </span>
-        <span class="me-2 custom-text-gray custom-fs-16"> (icon) </span>
+        <a href="#"><span class="me-2 custom-text-gray custom-fs-16">상의</span></a>
+        <a href="#" class="vLogo">      
+          <img class="w-100 h-100" src="./image/vLogo_img.png">
+        </a>
       </div>
 
       <div class="nav-detail-rightBox-rightLine rounded-pill">
@@ -367,13 +390,12 @@
         </select>
       </div>
     </div>
-  </div>      
+  </div>     
+
 
 
 
   <main class="mt-5">
-    <!-- <div class="mb-5"> </div> -->
-    <!-- class= "main-middle"- -->
     <div class="main-container">   <!--padding: 60px 50px 200px;-->
       <aside class="mt-2" >    <!-- height:1000px;-->
 
@@ -515,7 +537,7 @@
                 <span class="priceText">1만원 이하</span>
               </div>
               <div class="main-aside-thirdCategory-priceBox-detail-right">
-                <input class="priceCheckBox" type="radio" id="priceCheckBox" onclick="unPriceCheckBox()" >
+                <input class="priceCheckBox" type="radio"  name="priceCheckBox" id="priceCheckBox" onclick="updatePriceCheckBox()" >
               </div>
             </div>
 
@@ -525,7 +547,7 @@
                 <span class="priceText">1만원 ~ 5만원</span>
               </div>
               <div class="main-aside-thirdCategory-priceBox-detail-right">
-                <input class="priceCheckBox" type="radio" id="priceCheckBox" onclick="unPriceCheckBox()" >
+                <input class="priceCheckBox" type="radio" name="priceCheckBox" id="priceCheckBox"  onclick="updatePriceCheckBox()" >
               </div>
             </div>
 
@@ -535,7 +557,7 @@
                 <span class="priceText">5만원 ~ 10만원</span>
               </div>
               <div class="main-aside-thirdCategory-priceBox-detail-right">
-                <input class="priceCheckBox" type="radio" id="priceCheckBox" onclick="unPriceCheckBox()" >
+                <input class="priceCheckBox" type="radio" name="priceCheckBox" id="priceCheckBox" onclick="updatePriceCheckBox()"  >
               </div>
             </div>
 
@@ -545,7 +567,7 @@
                 <span class="priceText">10만원 ~ 30만원</span>
               </div>
               <div class="main-aside-thirdCategory-priceBox-detail-right">
-                <input class="priceCheckBox" type="radio" id="priceCheckBox" onclick="unPriceCheckBox()" >
+                <input class="priceCheckBox" type="radio"  name="priceCheckBox" id="priceCheckBox" onclick="updatePriceCheckBox()"  >
               </div>
             </div>
 
@@ -555,7 +577,7 @@
                 <span class="priceText">50만원 ~ 100만원</span>
               </div>
               <div class="main-aside-thirdCategory-priceBox-detail-right">
-                <input class="priceCheckBox" type="radio" id="priceCheckBox" onclick="unPriceCheckBox()" >
+                <input class="priceCheckBox" type="radio"  name="priceCheckBox" id="priceCheckBox" onclick="updatePriceCheckBox()"  >
               </div>
             </div>          
 
@@ -565,34 +587,46 @@
                 <span class="priceText">100만원 이상</span>
               </div>
               <div class="main-aside-thirdCategory-priceBox-detail-right">
-                <input class="priceCheckBox" type="radio" id="priceCheckBox" onclick="unPriceCheckBox()" >
+                <input class="priceCheckBox" type="radio"  name="priceCheckBox" id="priceCheckBox" onclick="updatePriceCheckBox()" >
               </div>
             </div>  
 
             <div class="mb-3"></div>
             <div class="main-aside-thirdCategory-priceBox-detail">
               <div class="main-aside-thirdCategory-priceBox-detail-left">
-                <span class="priceText">직접 설정</span>
+                <span class="priceText">직접설정</span>
               </div>
               <div class="main-aside-thirdCategory-priceBox-detail-right">
-                <input class="priceCheckBox" type="radio" id="priceCheckBox" onclick="unPriceCheckBox()" >
+                <input class="priceCheckBox" type="radio"  name="priceCheckBox" id="priceCheckBoxSet" onclick="updatePriceCheckBox()" >
               </div>
             </div>  
-            
-            최소 가격
-            최대 가격
+ 
+            <div class="mb-3"></div>
 
+            <div class="main-aside-thirdCategory-priceBox-detailSet">
+              <span class="priceSetText"> 최소 가격 </span>
+        
+              <div class="input-container">
+                <input type="text"  value="2,500" disabled> 
+                <span class="priceText">원</span>
+              </div>
+            </div>  
+ 
+            <div class="main-aside-thirdCategory-priceBox-detailSet">
+              <span class="priceSetText"> 최대 가격 </span>
+        
+              <div class="input-container">
+                <input type="text"  value="2,100,000" disabled> 
+                <span class="priceText">원</span>
+              </div>
+            </div>  
 
           </div>
         </div>
 
 
-
-
-
         <br>
         <br>
-
         <br>
       </aside>
         
@@ -1249,7 +1283,9 @@
 
   </main>
 
-        
+
+
+
 
 
 
