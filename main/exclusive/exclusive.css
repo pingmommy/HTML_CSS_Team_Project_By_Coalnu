@@ -15,10 +15,6 @@
   bottom: 50px;
   text-align: center;
 }
-.ing-text {
-  height: 40%;
-  /* border: 1px solid red; */
-}
 
 .ing-text2 {
   padding-top: 40%;
@@ -38,5 +34,13 @@
 @media (max-width: 600px) {
   html {
     font-size: 13px !important;
+  }
+
+  .ing-text2 {
+    padding-top: 3rem;
+  }
+
+  .img3 {
+    margin: 3rem;
   }
 }
