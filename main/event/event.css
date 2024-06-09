@@ -1,5 +1,7 @@
 /* ==============================main-top=============================== */
-
+.disappear {
+  display: none !important;
+}
 .main-top-container {
   display: block;
   width: 100%;
