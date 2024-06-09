@@ -31,6 +31,10 @@
   font-size: 4.3rem;
 }
 
+.exclusiveDisapper {
+  display: none;
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 13px !important;
@@ -42,5 +46,12 @@
 
   .img3 {
     margin: 3rem;
+  }
+
+  .exclusiveDisapper {
+    display: block;
+  }
+  .exclusiveText {
+    display: none;
   }
 }
