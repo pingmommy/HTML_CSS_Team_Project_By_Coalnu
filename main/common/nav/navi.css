@@ -124,10 +124,12 @@ a {
     justify-content: center;
     padding-right: 1rem;
   }
-
+  .navbar {
+    padding-top: 0.5rem !important;
+  }
   .nav-item {
     text-align: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
   .navbar-brand {
     padding-left: 1rem;

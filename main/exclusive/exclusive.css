@@ -20,6 +20,10 @@
   padding-top: 40%;
   /* border: 1px solid red; */
 }
+.pram {
+  padding: 0.3rem 0;
+  font-size: medium;
+}
 
 .devidedLine {
   border-bottom: 3px solid black;
