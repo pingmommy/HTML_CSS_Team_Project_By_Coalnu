@@ -63,6 +63,14 @@ a {
   padding: 0 0.5rem;
 }
 
+/* 로그인버튼 */
+.btn-outline-dark.login {
+  margin-top: 2rem;
+
+  padding: 0.4rem 10rem;
+  font-weight: 600;
+}
+
 /*드롭박스*/
 
 .header_nav_subwrap > ul {

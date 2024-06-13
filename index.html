@@ -28,13 +28,13 @@
         $("#footer").load("./main/common/footer/footer.html");
       });
     </script>
+    <link rel="stylesheet" href="/main/home/swiper.css" />
     <link rel="stylesheet" href="./main/home/styles.css" />
     <title>11CONCEPT</title>
   </head>
   <body>
     <header>
       <!-- 최상단 배너 -->
-
       <section>
         <!-- Swiper -->
         <div class="swiper mySwiper">
@@ -333,23 +333,70 @@
                   <img src="/main/common/nav/images/ico_bag.svg" alt=""
                 /></a>
               </li>
-
-              <li>
-                <a href="">
-                  <img src="/main/common/nav/images/ico_login.svg" alt=""
-                /></a>
-              </li>
               <li>
                 <a href="">
                   <img src="/main/common/nav/images/ico_mypage.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
+                  <img src="/main/common/nav/images/ico_login.svg" alt=""
                 /></a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-      <!---------------캐러셀 ------------------->
+      <!-- 로그인상자 -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-3"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasLabel"
+        style="width: 500px"
+      >
+        <div class="offcanvas-header d-flex justify-content-center">
+          <h3 class="offcanvas-title pt-5" id="offcanvasLabel">로그인</h3>
+        </div>
+        <div class="offcanvas-body">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">아이디</label>
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput"
+              placeholder="ID를 입력하세요."
+            />
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label"
+              >비밀번호</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput2"
+              placeholder="비밀번호를 입력하세요"
+            />
+          </div>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="btn btn-outline-dark login"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              로그인
+            </button>
+          </div>
+        </div>
+      </div>
+      <!---------------헤더배너캐러셀 ------------------->
       <section class="top-pt10">
         <div
           id="carouselExampleIndicators"
@@ -487,117 +534,153 @@
           <div class="text-center">
             <h1 class="main-center-Text pb-5">MAKE IT YOURS</h1>
           </div>
-          <div class="container-fluid ps-5 pe-5">
-            <div class="row">
-              <div class="col-lg-2 col-6">
-                <div class="main-center1-imgBox">
-                  <img
-                    src="https://product-image.wconcept.co.kr/productimg/image/img1/60/305776360_SK19636.jpg?rs=233"
-                    width="100%"
-                  />
-                </div>
-                <div class="product_info">
-                  <div class="text_wrap">
-                    <div class="brand">OFFHOUR</div>
-                    <div class="product">자이푸르 반팔 잠옷 세트</div>
-                  </div>
-                  <div class="price">
-                    <span class="discount_price">46,000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-6">
-                <div class="main-center1-imgBox">
-                  <img
-                    src="https://product-image.wconcept.co.kr/productimg/image/img1/17/305732917_LF88819.jpg?rs=233"
-                    width="100%"
-                  />
-                </div>
-                <div class="product_info">
-                  <div class="text_wrap">
-                    <div class="brand">KATIN</div>
-                    <div class="product">
-                      케이튼 오르테가 반팔 티셔츠 [WHITE]
+          <div class="container-fluid">
+            <div class="swiper-container">
+              <div class="swiper2 mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide sw2">
+                    <div class="main-center1-imgBox">
+                      <img
+                        src="https://product-image.wconcept.co.kr/productimg/image/img1/60/305776360_SK19636.jpg?rs=233"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <div class="text_wrap">
+                        <div class="brand">OFFHOUR</div>
+                        <div class="product">자이푸르 반팔 잠옷 세트</div>
+                      </div>
+                      <div class="price">
+                        <span class="discount_price">46,000</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="price">
-                    <span class="discount_price">58000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-6">
-                <div class="main-center1-imgBox">
-                  <img
-                    src="https://product-image.wconcept.co.kr/productimg/image/img1/86/301628486_OY21856.jpg?rs=233"
-                    width="100%"
-                  />
-                </div>
-                <div class="product_info">
-                  <div class="text_wrap">
-                    <div class="brand">DRAWFIT WOMEN</div>
-                    <div class="product">셔링 퍼프 반팔 블라우스 [WHITE]</div>
-                  </div>
-                  <div class="price">
-                    <span class="discount_price"> 39,690</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-6">
-                <div class="main-center1-imgBox">
-                  <img
-                    src="https://product-image.wconcept.co.kr/productimg/image/img1/50/302714650_OL63946.jpg?rs=233"
-                    width="100%"
-                  />
-                </div>
-                <div class="product_info">
-                  <div class="text_wrap">
-                    <div class="brand">LE</div>
-                    <div class="product">light blue denim shorts[blue]</div>
-                  </div>
-                  <div class="price">
-                    <span class="discount_price">86,000 </span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-6">
-                <div class="main-center1-imgBox">
-                  <img
-                    src="https://product-image.wconcept.co.kr/productimg/image/img1/26/305743626_HH55521.jpg?rs=233"
-                    width="100%"
-                  />
-                </div>
-                <div class="product_info">
-                  <div class="text_wrap">
-                    <div class="brand">CITYBREEZE</div>
-                    <div class="product">나일론 윈드 브레이커 점퍼 [BLACK]</div>
-                  </div>
-                  <div class="price">
-                    <span class="discount_price"> 179,000 </span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-6">
-                <div class="main-center1-imgBox">
-                  <img
-                    src="https://product-image.wconcept.co.kr/productimg/image/img1/22/301203422.jpg?rs=233"
-                    width="100%"
-                  />
-                </div>
-                <div class="product_info">
-                  <div class="text_wrap">
-                    <div class="brand">GRAVER</div>
-                    <div class="product">
-                      스몰 드로잉 스마일 윈드브레이커 [IVORY]
+                  <!-- 2 -->
+                  <div class="swiper-slide sw2">
+                    <div class="main-center1-imgBox">
+                      <img
+                        src="https://product-image.wconcept.co.kr/productimg/image/img1/17/305732917_LF88819.jpg?rs=233"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <div class="text_wrap">
+                        <div class="brand">KATIN</div>
+                        <div class="product">
+                          케이튼 오르테가 반팔 티셔츠 [WHITE]
+                        </div>
+                      </div>
+                      <div class="price">
+                        <span class="discount_price">58000</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="price">
-                    <span class="discount_price">99,000</span>
+                  <!-- 3 -->
+                  <div class="swiper-slide sw2">
+                    <div class="main-center1-imgBox">
+                      <img
+                        src="https://product-image.wconcept.co.kr/productimg/image/img1/86/301628486_OY21856.jpg?rs=233"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <div class="text_wrap">
+                        <div class="brand">DRAWFIT WOMEN</div>
+                        <div class="product">
+                          셔링 퍼프 반팔 블라우스 [WHITE]
+                        </div>
+                      </div>
+                      <div class="price">
+                        <span class="discount_price"> 39,690</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="swiper-slide sw2">
+                    <div class="main-center1-imgBox">
+                      <img
+                        src="https://product-image.wconcept.co.kr/productimg/image/img1/50/302714650_OL63946.jpg?rs=233"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <div class="text_wrap">
+                        <div class="brand">LE</div>
+                        <div class="product">light blue denim shorts[blue]</div>
+                      </div>
+                      <div class="price">
+                        <span class="discount_price">86,000 </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 5 -->
+                  <div class="swiper-slide sw2">
+                    <div class="main-center1-imgBox">
+                      <img
+                        src="https://product-image.wconcept.co.kr/productimg/image/img1/26/305743626_HH55521.jpg?rs=233"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <div class="text_wrap">
+                        <div class="brand">CITYBREEZE</div>
+                        <div class="product">
+                          나일론 윈드 브레이커 점퍼 [BLACK]
+                        </div>
+                      </div>
+                      <div class="price">
+                        <span class="discount_price"> 179,000 </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div class="swiper-slide sw2">
+                    <div class="main-center1-imgBox">
+                      <img
+                        src="https://product-image.wconcept.co.kr/productimg/image/img1/22/301203422.jpg?rs=233"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <div class="text_wrap">
+                        <div class="brand">GRAVER</div>
+                        <div class="product">
+                          스몰 드로잉 스마일 윈드브레이커 [IVORY]
+                        </div>
+                      </div>
+                      <div class="price">
+                        <span class="discount_price">99,000</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 7 -->
+                  <div class="swiper-slide sw2">
+                    <div class="main-center1-imgBox">
+                      <img
+                        src="https://product-image.wconcept.co.kr/productimg/image/img1/86/302546986_GG52596.jpg?rs=233"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="product_info">
+                      <div class="text_wrap">
+                        <div class="brand">CPGN</div>
+                        <div class="product">피크먼트 반팔티 더스티핑크</div>
+                      </div>
+                      <div class="price">
+                        <span class="discount_price">50,000</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- <div class="swiper-button-next"></div> -->
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
+            <!-- <div class="swiper-pagination"></div> -->
           </div>
         </section>
+
         <!-- MAIN center2 뷰티상품 섹션 -->
         <section class="main-pt15">
           <div class="text-center main-top-textBox">

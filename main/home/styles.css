@@ -21,6 +21,7 @@ body {
 }
 
 .product_info {
+  width: 100%;
   padding-left: 0.6rem;
   padding-top: 0.5rem;
 }
@@ -103,7 +104,7 @@ body {
 
 /* 내비 하위 카테고리(abosolute)  */
 .header_nav_subwrap {
-  top: 110px !important;
+  top: 111px !important;
 }
 
 /********************** main ****************************/
@@ -138,8 +139,9 @@ body {
   color: #a8a8a8;
 }
 
-/********* main-center *********/
-.main-center-Text {
+/********* main-center1 *********/
+
+.main-center1-Text {
   font-size: 3.2rem;
   font-weight: 500;
   color: black;
@@ -161,6 +163,7 @@ body {
   transform: scale(1.2);
 }
 
+/********* main-center2 *********/
 .main-center2-imgS {
   width: 100%;
   height: 80%; /*뷰티섹션 오른 쪽 작은 박스들*/

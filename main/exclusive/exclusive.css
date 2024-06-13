@@ -1,3 +1,6 @@
+.mgt-11 {
+  margin-top: 11rem;
+}
 .btn-dark {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -28,7 +31,7 @@
 .devidedLine {
   border-bottom: 3px solid black;
   border-top: 3px solid black;
-  margin: 5rem 0;
+  margin: 11rem 0;
 }
 
 .devidedLine h1 {
@@ -57,5 +60,17 @@
   }
   .exclusiveText {
     display: none;
+  }
+
+  .mgt-11 {
+    margin-top: 6rem;
+  }
+
+  .devidedLine {
+    margin: 6rem 0;
+  }
+
+  .main-bottom-imgBox img {
+    padding-bottom: 1rem;
   }
 }
