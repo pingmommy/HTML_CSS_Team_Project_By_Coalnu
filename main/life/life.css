@@ -128,6 +128,24 @@
   html {
     font-size: 13px !important;
   }
+
+  .introWrap {
+    margin-top: 0;
+  }
+  .product-box {
+    margin-bottom: 1rem;
+    pointer-events: none;
+  }
+
+  .bath-text {
+    animation: none;
+    left: 10px;
+    bottom: 4rem;
+    font-size: 10px;
+  }
+  .main-product-detail {
+    opacity: 1;
+  }
 }
 .bb {
   border: 1px solid red;

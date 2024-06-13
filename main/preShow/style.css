@@ -47,4 +47,7 @@ body {
   .main-img4 img {
     padding-bottom: 1rem;
   }
+  .start-0 {
+    display: none;
+  }
 }
